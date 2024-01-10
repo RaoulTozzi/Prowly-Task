@@ -1,12 +1,26 @@
-Feature: Search for "Prowly Media Monitoring" on bing.com with content category filtering
+# Documentation for searching for the phrase "Prowly Media Monitoring" on bing.com with content category filtering
 
-  Scenario: Perform a basic search and filter by content category
+Feature: Search for "Prowly Media Monitoring" on bing.com with content category filtering
+# The scenario describes basic searching and filtering results by content category
+
+  # The first example has three steps
+  Scenario: Perform a basic search of "Prowly Media Monitoring" and filter by content category (all, video, news, etc.)
+    # User performs a basic search and filters results by content category  
     Given the user is on the bing.com homepage
     When the user enters "Prowly Media Monitoring" into the search bar
     And the user presses the Enter key
     Then the user should see search results for "Prowly Media Monitoring"
 
+  # The second example has three steps
   Scenario: Filter search results by video content category
+    # User filters search results by the "Video" content category
     Given the user is on the search results page for "Prowly Media Monitoring"
     When the user selects the "Video" content category
     Then the user should see video results related to "Prowly Media Monitoring"
+
+  # The third example has three steps
+  Scenario: Filter search results by news content category
+    # User filters search results by the "News" content category
+    Given the user is on the search results page for "Prowly Media Monitoring"
+    When the user selects the "News" content category
+    Then the user should see news results related to "Prowly Media Monitoring"

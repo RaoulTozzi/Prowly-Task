@@ -7,3 +7,9 @@ Feature: Using "copilot" in bing.com to gather information about Prowly's media 
     # User searches for news about Prowly's media monitoring module
     # User utilizes copilot to explore snippets and summaries
     # User validates the information by clicking on a relevant news result
+    Given the user is on the bing.com homepage
+    When the user enters "Prowly media monitoring module news" into the search bar
+    And the user activates the "copilot" feature
+    And the user utilizes copilot to explore snippets and summaries
+    And the user clicks on a relevant news result
+    Then the user should see detailed news about Prowly's media monitoring module

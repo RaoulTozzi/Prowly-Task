@@ -1,0 +1,9 @@
+# Documentation for Using "copilot" in bing.com to gather information about Prowly's media monitoring module
+
+Feature: Using "copilot" in bing.com to gather information about Prowly's media monitoring module
+  # Scenario describes verifying news about Prowly's media monitoring module using copilot
+
+  Scenario: Verify news about Prowly's media monitoring module using copilot
+    # User searches for news about Prowly's media monitoring module
+    # User utilizes copilot to explore snippets and summaries
+    # User validates the information by clicking on a relevant news result
